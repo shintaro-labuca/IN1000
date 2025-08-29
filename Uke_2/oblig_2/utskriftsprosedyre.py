@@ -13,6 +13,9 @@ def main():
         bosted = input("Hvor kommer du fra?\n> ")
 
         print(f"Hei {navn}! Du er fra {bosted}.")
+
+
+        
     
     #Kaller funksjonen tre ganger
     hilsen()
