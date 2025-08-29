@@ -16,10 +16,7 @@ def main():
 
 
         print(f"Hei {navn}! Du er fra {bosted}.")
-
-
-
-    
+        
     #Kaller funksjonen tre ganger
     hilsen()
     hilsen()
