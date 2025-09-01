@@ -1,7 +1,7 @@
 """
 
 Dette er et program som leser inn informasjon om brukeren til en prosedyre
-og kaller det tre ganger
+og kaller det tre ganger.
 
 """
 
