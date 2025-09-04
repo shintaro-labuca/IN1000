@@ -5,6 +5,7 @@ Billetter, prosedyrer, if/else setning
 def main():
 
     #1.
+    alder = 0
     def billett(alder):     #Prosedyre med alder som parameter
         barn = 0 < alder < 18
         voksen = 18 <= alder < 67
@@ -16,6 +17,7 @@ def main():
             print("Du kan kjøpe voksenbillett til 45 kr")
         elif senior:
             print("Du kan seniorbillett til 20 kr")
+    
             
     #2. 
     for i in range(3):      #Kaller prosedyren tre ganger for å teste ulike aldre
