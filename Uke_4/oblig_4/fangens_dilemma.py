@@ -2,13 +2,13 @@ def main():
     print("Velkommen til Fangens dilemma. Velg over å svike, eller samarbeide med den andre spilleren.")
 
     valg_1 = int(input(
-    "Velg tall mellom å svike eller samarbeide:\n\
+    "Spiller 1 - Velg tall mellom å svike eller samarbeide:\n\
     1: Samarbeide\n\
     2: Svike\n\
     > "))
 
     valg_2 = int(input(
-    "Velg tall mellom å svike eller samarbeide:\n\
+    "Spiller - Velg tall mellom å svike eller samarbeide:\n\
     1: Samarbeide\n\
     2: Svike\n\
     > "))
@@ -41,9 +41,10 @@ def main():
     motspiller.append(valg_2)
     
     def spill_snilt(liste):
-        ...
+        pass
     
     print(motspiller)
+
 main()
 
 
