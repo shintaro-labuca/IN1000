@@ -27,15 +27,6 @@ def main():
     > "))
 
 
-    """if -1 < hent_reise - 1 < 3:
-        if -1 < hent_kategori - 1 < 3: 
-                print(f"Du valgte reise {hent_reise} og kategori {hent_kategori}: {reise_liste[hent_reise - 1][hent_kategori - 1]}")
-                
-        else:
-                print("Du har valgt tall utenfor menyen.")
-    else:
-                print("Du har valgt tall utenfor menyen.")"""
-
     if -1 < hent_reise - 1 < 3:
         if hent_kategori == "Reisemål":
             hent_kategori = 1
