@@ -6,17 +6,11 @@ def les_poeng(filnavn):
         kolonner = linje.split(":")
         h_kolonne = kolonner[1].split(",")
         nøkkel = kolonner[0]
-        verdi = h_kolonne
-        poeng[nøkkel] = verdi
-    
-    sum = 0
-    for liste in poeng.values():
-        for poeng in liste:
-            poeng = int(poeng)
-            sum += poeng
+        sum = 0
+        for tall in h_kolonne:
+            sum += int(tall)
         poeng[nøkkel] = sum
-            
     
-    
+    return poeng
 
 print(les_poeng("poeng.txt"))
