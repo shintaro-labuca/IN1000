@@ -39,6 +39,6 @@ def skriv_ut_siste_linjer(filnavn, antall_linjer):
     fil.close()
         
 
-skriv_ut_første_linjer("test.in", 2)
+skriv_ut_første_linjer("test.in", )
 skriv_ut_siste_linjer("test.in", 3)
 
