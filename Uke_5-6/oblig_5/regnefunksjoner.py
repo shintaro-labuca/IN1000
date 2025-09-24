@@ -19,9 +19,8 @@ def tommer_til_cm(tall):
     
 def gyldig_tall(prompt):
     while True:
-        bruker_input = input(prompt)
         try:
-            return float(bruker_input)
+            return float((input(prompt)))
         except ValueError:
             print("Det må være et tall, prøv igjen!")
 
@@ -33,7 +32,9 @@ def skriv_beregninger():
             f"Subtraksjon: {subtraksjon(brukertall1, brukertall2)}\n"
             f"Divisjon: {divisjon(brukertall1, brukertall2)}\n")
             
-    bruker_tommer = float(input("Konvertering av tommer til cm - skriv et tall\n> "))
+    bruker_tommer = gyldig_tall("Konvertering av tommer til cm - skriv et tall\n> ")
     print(f"Resultat: {tommer_til_cm(bruker_tommer)}")
+
+
 
 # MENY FUNKSJON UNFINISHED
