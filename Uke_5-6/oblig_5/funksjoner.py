@@ -1,3 +1,7 @@
+"""
+Programmet er om å finne antall oppgitte bokstav det forekommer i tekstrengen
+"""
+
 def adder(tall1, tall2):    # 1.
     return tall1 + tall2
 

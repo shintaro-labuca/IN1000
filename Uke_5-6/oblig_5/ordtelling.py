@@ -1,3 +1,6 @@
+"""
+Programmet er om å finne antall ord i en setning og antall bokstaver i et ord
+"""
 def antall_bokstaver(ord):
     antall = 0
     for bokstav in ord:

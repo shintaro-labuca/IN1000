@@ -1,3 +1,7 @@
+"""
+Programmet jobber med å lese inn og skrive på filer med temperaturdata
+"""
+
 # 1.
 def maks_temp_mnd(filnavn):
     fil = open(filnavn, "r")
@@ -20,7 +24,7 @@ def maks_daglig_temp(temp_ordbok, filnavn):
         kolonner = linje.split(",")
         måned = kolonner[0]
         temperatur = float(kolonner[2])
-        if temp_ordbok[måned] < temperatur: # Hvis temperatur er høyere enn temp i ordboken
+        if temp_ordbok[måned] < temperatur: # Hvis temperatur i csv er høyere enn temp i ordboken
             temp_ordbok[måned] = temperatur # så oppdateres det
     fil.close()
     return temp_ordbok
