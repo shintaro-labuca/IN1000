@@ -1,0 +1,17 @@
+1. Hva er innkapsling? Hvorfor er det nyttig?
+
+    # Innkapsling betyr å samle attributter og metoder i en klasse, og å begrense tilgang til spesifikke detaljer
+      Det er nyttig fordi den gjør koden ryddigere, lettere å vedlikeholde og beskytter data
+
+2. Hva er grensesnittet til en klasse? Hvordan skiller det seg fra implementasjonen av en klasse?
+
+    # Grensesnitte er det man kan bruke utenfra, altså offentlige metoder og attributter.
+      Implementasjonen er hvordan dette er faktist skrevet og fungerer inne i klassen. Brukeren
+      av en klasse trenger bare å kjenne til grensesnittet, ikke detaljene i implementasjonen.
+
+3. Hva er en instansmetode (ofte kalt bare metode)? Hvordan skiller metoder seg fra
+   prosedyrene/funksjonene vi har jobbet med hittil?
+
+    # En instansmetode er en funksjon som er bundet til et objekt, og som alltid får self som første    
+      som første parameter. Den kan bruke og endre objektets attributter. Vanlige funksjoner står alene
+      og har ikke tilgang til objektets indre tilstand på samme måte.
