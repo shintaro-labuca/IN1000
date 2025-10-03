@@ -1,0 +1,17 @@
+A. Klassedefinisjon
+    Linje 1
+
+B. Opprettelse av nytt objekt
+    Linje 19 og 20
+    
+C. Definisjon av instansvariabel
+    Linje 3 - 5
+D. Definisjon av instansmetode
+    Linje 7, 11, og 15
+
+E. Definisjon av konstruktør
+    Linje 2
+F. Kall på instansmetode
+    Linje 21
+G. Argumenter
+    Linje 25 og 26
