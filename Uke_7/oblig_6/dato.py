@@ -11,7 +11,7 @@ class Dato:
         return f"{self._dag}.{self._måned}.{self._år}"
     
     def samme_dag(self, dag_nr) -> bool:
-        return self._dag == dag_nr
+        return self._dag == dag_nr # Returnerer True ved likhet, ellers False
     
     def dager_i_måneden(self, måned): # Hjelpefunksjon for å finne riktig antall dager i en måned
         if måned in [4, 6, 9, 11]: # Måneder med 30 dager
