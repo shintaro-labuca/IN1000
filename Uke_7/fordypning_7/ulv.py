@@ -18,3 +18,14 @@ class Ulv:
     
     def hent_posisjon(self) -> int:
         return self._posisjon
+
+    def beveg_høyre(self):
+        self._posisjon += 1
+        if self._posisjon > 10:
+            self._posisjon = 1
+    
+    def beveg_venstre(self):
+        self._posisjon -= 1
+        if self._posisjon < 0:
+            self._posisjon = 10
+            
