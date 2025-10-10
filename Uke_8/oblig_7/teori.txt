@@ -1,6 +1,11 @@
 Oppgave 1
 
 b.
-
+Det er bedre å ha en egen metode for filinnlesing, fordi da slipper konstruktøren å gjøre alt på en gang.
+Filinnlesing kan skje når man ønsker det, gjennom en metode. Klassen blir mer fleksibel, enten ved
+filinnlesing eller manuelt. Koden blir enklere å forstå, teste og gjenbruke.
 
 c.
+En annen naturlig type år kunne vært en streng. Det kan være praktisk fordi data som leses fra fil
+kommer ofte som tekst, og dermed ikke må konverteres. Ulempen er at man da ikke kan sammenligne år
+numerisk uten å konvertere til int først.

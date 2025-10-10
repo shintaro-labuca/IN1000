@@ -28,7 +28,7 @@ def testprogram():
     print("Registrerer ny film")
     # Legg inn en ny film med tittel og produksjonsår som leses fra terminal
     # <fyll ut og fjern # på print-setningen>
-    ##filmklubb.registrer_film()
+    filmklubb.registrer_film()
     print()
     # Skriv ut all info om alle filmer og sjekk at ny film ble registrert
     # <fyll ut>
@@ -38,7 +38,7 @@ def testprogram():
     # Hvis _eq_ er implementert i Film og testes i registrer_film:
     print("Prøver å registrere film som allerede finnes")
     # <fyll ut og fjern # på print-setningen>
-    ##filmklubb.registrer_film()
+    filmklubb.registrer_film()
     print()    
 
 
@@ -63,11 +63,12 @@ def testprogram():
     # kall metoden på film-objektet du fikk returnert fra finn_film_tittel
     # (navn og rolle for to skuespillere du velger selv leses fra terminal)
     # <fyll ut og fjern # på print-setningen>
-    ##filmklubb.legg_til_skuespillere(ekte_film)
+    filmklubb.legg_til_skuespillere(ekte_film)
+    filmklubb.legg_til_skuespillere(ekte_film)
     print()
     # SKriv ut all info om alle filmer og sjekk at resultatet er som forventet
     # <fyll ut>
-    filmklubb.skriv_ut_alle_filmer
+    filmklubb.skriv_ut_alle_filmer()
     print()
 
     # finn_film_periode
@@ -82,12 +83,14 @@ def testprogram():
     print()
 
     # Kall på finn_film_periode med argumentene etter=2020 og før=2020
-    # print("Leter etter filmer produsert etter 2020 og før 2020:")
+    print("Leter etter filmer produsert etter 2020 og før 2020:")
     # Kontroller at resultatet er som forventet (tom liste) med assert (evt skriv ut)
     # <fyll ut og fjern # på print-setningen>
+    filmer = filmklubb.finn_filmer_periode(2020, 2020)
+    assert filmer == []
     print()
 
-
+    filmklubb.skriv_ut_alle_filmer()
     # SKriv ut all info om alle filmer og sjekk at resultatet er som forventet
     # <fyll ut>
 

@@ -40,11 +40,12 @@ class Film:
     
     def __str__(self) -> str:
         tekst = f"Film: {self._tittel} ({self._år})\n"
-        tekst += "Medvirkende:\n"
-        for skuespiller, rolle in self._skuespillere.items():
-            tekst += f"{skuespiller} som {rolle}\n"
+        if self._skuespillere:          # Returner True hvis det finnes noe i ordboken
+            tekst += "Medvirkende:\n"   # Skriver ut dersom det er registrerte skuespillere til film-objektet
+            for skuespiller, rolle in self._skuespillere.items():
+                tekst += f"{skuespiller} som {rolle}\n"
         return tekst
 
     def __eq__(self, annen_film) -> bool:
-        return self.hent_tittel() == annen_film.hent_tittel() and self.hent_år() == annen_film.hent_år()
+        return self.hent_tittel() == annen_film.hent_tittel() and self.hent_år() == annen_film.hent_år() # Bruker getters og sjekker verdiene mot hverandre
         

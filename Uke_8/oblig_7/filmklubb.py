@@ -14,8 +14,8 @@ class Filmklubb:
 
     def skriv_ut_alle_filmer(self):
         for film in self._filmer:
-            print(f"{film.hent_tittel()} ({film.hent_år()}).")
-    
+            print(film)
+
     def registrer_film(self):
         print("Registrer ny film her -")
         film_tittel = input("Tittel: ")
@@ -25,13 +25,11 @@ class Filmklubb:
         for film in self._filmer:
             if film.__eq__(registrert_film):
                 print("Denne filmen er allerede registrert.")
-                return
+                return  # Avslutter metoden 
             
         self._filmer.append(registrert_film)
         print(f"{registrert_film.hent_tittel()} ({registrert_film.hent_år()}) ble lagt til.")
             
-
-
     def finn_film_tittel(self, tittel: str):
         for film in self._filmer:
             if film.sjekk_tittel(tittel):
