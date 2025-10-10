@@ -31,9 +31,7 @@ class Film:
         return år_1 < self._år < år_2               
     
     def sjekk_tittel(self, tittel_start: str):
-        if tittel_start in self._tittel:
-            return True
-        elif tittel_start == "":
+        if (tittel_start in self._tittel) or (tittel_start == ""):
             return True
         elif len(tittel_start) > len(self._tittel):
             return False
