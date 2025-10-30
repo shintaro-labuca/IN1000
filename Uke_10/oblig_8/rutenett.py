@@ -38,14 +38,14 @@ class Rutenett:
                 return self._rutenett[rad][kol] 
         return None
     
-    def tegn_rutenett(self) -> None:    #Går gjennom hver plass i rutenettet, skriver ut cellens status, "O" om den er levende, "." hvis ikke
+    def tegn_rutenett(self) -> None:    # Går gjennom hver plass i rutenettet, skriver ut cellens status, "O" om den er levende, "." hvis ikke
         for rad in range(self._ant_rader):
             for kolonne in range(self._ant_kolonner):
                 print(self._rutenett[rad][kolonne].hent_status_tegn(), end="")
             print()
 
     def _sett_naboer(self, rad, kol) -> None:
-        celle = self._rutenett[rad][kol]    #Definerer en gitt celle
+        celle = self._rutenett[rad][kol]    # Definerer en gitt celle
 
         for nabo_rad in range(rad-1, rad+2):    # For radene over, raden med cellen, og raden under
             for nabo_kol in range(kol-1, kol+2):    # For kol ved siden, kol med celle, og kol ved siden
