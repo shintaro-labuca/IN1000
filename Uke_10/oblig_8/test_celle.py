@@ -104,12 +104,12 @@ def test_oppdater_status():
 # TODO: Kalle på de metodene du ønsker å teste (fjern kommentarene under):
 
 print("\n** Test Celle **")
-# test_celle()
-# test_sett_doed_levende()
-# test_er_levende()
-# test_hent_status_tegn()
-# test_legg_til_nabo()
-# test_tell_levende_naboer()
-# test_oppdater_status()
+test_celle()
+test_sett_doed_levende()
+test_er_levende()
+test_hent_status_tegn()
+test_legg_til_nabo()
+test_tell_levende_naboer()
+test_oppdater_status()
 
 

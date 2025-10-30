@@ -47,6 +47,6 @@ def test_oppdatering():
 # TODO: Kalle på de metodene du ønsker å teste (fjern kommentarene under):
 
 print("\n** Test Verden **")
-# test_konstruktoer()
-# test_tegn()
-# test_oppdatering()
+test_konstruktoer()
+test_tegn()
+test_oppdatering()
