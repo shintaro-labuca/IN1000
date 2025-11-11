@@ -1,17 +1,18 @@
-class Navn:
-    def __init__(self, fornavn, mellomnavn, etternavn) -> None:
-        self._fornavn = fornavn
-        self._mellomnavn = mellomnavn
-        self._etternavn = etternavn
+def felles(tall_lister: list[list[int]]):
+    ordbok = {}
+    resultat = []
 
-    def sorterbar(self):
-        return f"{self._etternavn}, {self._fornavn} {self._mellomnavn}"
+    for tall_liste in tall_lister:  # Ordbok av nøstet liste
+        for tall in tall_liste:
+            if tall in ordbok:
+                ordbok[tall] += 1
+            else:
+                ordbok[tall] = 1
     
-    def naturlig(self):
-        return f"{self._fornavn} {self._mellomnavn} {self._etternavn}"
-    
 
-person = Navn("Shintaro", "Emmanuel", "Labuca")
+    for tall, forekomst in ordbok.items():
+        if forekomst > 1:
+            resultat.append(tall)
+    return resultat
 
-print(person.sorterbar())
-print(person.naturlig())
+print(felles([[1,5,1], [3,4], [2,3]]))
