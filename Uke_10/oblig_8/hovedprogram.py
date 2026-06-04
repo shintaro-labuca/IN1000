@@ -14,7 +14,8 @@ def hovedprogram():
         elif svar.lower() == "q":
             break
         else:
-            print("Ugyldig input")
+            print("Ugyldig input og test")
 
 # starte hovedprogrammet
 hovedprogram()
+
